@@ -1,0 +1,505 @@
+@font-face {
+    font-family: Iran-Yekan-Regular;
+    src: url("fonts/iranyekanwebregularfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebregularfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Bold;
+    src: url("fonts/iranyekanwebboldfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebboldfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Light;
+    src: url("fonts/iranyekanweblightfanum.woff") format("woff");
+    src: url("fonts/iranyekanweblightfanum.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 1% 0;
+    background-color: #ffffff;
+}
+
+nav img {
+    display: block;
+    float: inline-end;
+    margin: -60px 5px;
+    width: 5em;
+    height: 6em;
+}
+
+nav ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+nav a {
+    display: flex;
+    padding: 0 1.5em;
+    color: #000000;
+    font-size: 20px;
+    line-height: 3em;
+    text-decoration: none;
+}
+nav a img {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    margin-left: 0.35em;
+    margin-top: 0.5em;
+}
+.container1 {
+    border-block-end: inset;
+    border-width: 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+    clip-path: inset(0px 0px -10px 0px);
+}
+@media screen and (max-width: 1600px) {
+    .container1 nav ul li {
+        width: 60%;
+    }
+}
+.container1 .profile {
+    font-size: 25px;
+    color: rgba(78, 78, 78, 1);
+    font-family: Iran-Yekan-light, sans-serif;
+    display: block;
+    margin-right: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    padding-top: 0;
+}
+.logo {
+    /* display: flex; */
+    float: right;
+}
+.logo-1 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    float: right;
+    /* padding: 2px; */
+}
+
+nav a:hover {
+    color: #853333;
+}
+
+.container2 .row1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.container2 .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    margin-left: 0;
+    width: 33%;
+}
+
+@media (max-width: 991px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.card1 {
+    background-color: rgba(36, 40, 113, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: 80%;
+    height: 80%;
+}
+.card1-header {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 130%;
+    max-width: 100%;
+    width: 315px;
+}
+
+.card1-value {
+    color: #fff;
+    flex-basis: auto;
+    flex-grow: 1;
+    font: 64px Iran-Yekan-Bold, sans-serif;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card1-title {
+    color: #242871;
+    font: 24px Iran-Yekan-Bold, sans-serif;
+    margin: auto 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card1-footer {
+    align-items: start;
+    background-color: #242871;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    color: rgba(255, 255, 255, 0.5);
+    font: 19px Iran-Yekan-Bold, sans-serif;
+    padding: 11px 28px;
+}
+.card1-footer a {
+    text-decoration: none;
+    align-items: start;
+    color: rgba(255, 255, 255, 0.5);
+    font: 19px Iran-Yekan-Bold, sans-serif;
+}
+
+.card2 {
+    background-color: rgba(206, 123, 92, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: 80%;
+    height: 80%;
+}
+
+.card2 .card1-title {
+    color: #ce7b5c;
+}
+
+.card2 .card1-footer {
+    background-color: #ce7b5c;
+}
+
+.card3 {
+    background-color: rgba(123, 84, 84, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 17px;
+    width: 80%;
+    height: 80%;
+}
+
+.card3 .card1-title {
+    color: #7b5454;
+}
+
+.card3 .card1-footer {
+    background-color: #7b5454;
+}
+
+/* tables */
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 80px;
+    flex-wrap: wrap;
+}
+.recent-transactions {
+    display: flex;
+    flex-direction: column;
+    padding: 59px 0;
+}
+
+@media (max-width: 991px) {
+    .recent-transactions {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+}
+
+.recent-transactions-header {
+    background-color: rgba(76, 55, 79, 0.75);
+    border: 0 solid #b9b9b9;
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font: 700 20px/130% Iran-yekan-Bold, sans-serif;
+    justify-content: center;
+    padding: 6px 10.5px;
+    text-align: center;
+    width: 625px;
+}
+
+@media (max-width: 991px) {
+    .recent-transactions-header {
+        max-width: 100%;
+    }
+}
+
+.recent-transactions-table {
+    background-color: #fff;
+    border-color: rgba(185, 185, 185, 1);
+    border-radius: 0 0 14px 14px;
+    padding: 0px 0px;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    width: 647px;
+}
+
+@media (max-width: 991px) {
+    .recent-transactions-table {
+        max-width: 100%;
+    }
+}
+
+.table-header {
+    background-color: rgba(92, 65, 65, 0);
+    color: #4c4c4c;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 0;
+    line-height: 130%;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .table-header {
+        flex-wrap: wrap;
+    }
+}
+
+.table-header-cell {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(181, 174, 174, 1);
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    flex: 1;
+    font-family: Iran-Yekan-Regular;
+    justify-content: center;
+    padding: 9px 12px;
+}
+
+.table-header-cell.services {
+    white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+    .table-header-cell.services {
+        white-space: initial;
+    }
+}
+
+.table-row {
+    background-color: rgba(92, 65, 65, 0);
+    display: flex;
+    gap: 0;
+}
+.table-row:last-child .table-cell:last-child {
+    border-bottom-right-radius: 12px;
+}
+.table-row:last-child .table-cell:first-child {
+    border-bottom-left-radius: 12px;
+}
+@media (max-width: 991px) {
+    .table-row {
+        flex-wrap: wrap;
+    }
+}
+
+.table-cell {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(185, 185, 185, 1);
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    flex: 1;
+    height: 36px;
+}
+
+.table-row:nth-child(even) .table-cell {
+    background-color: #f0f0f0;
+}
+/* table 2 */
+.recent-patients-report {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+@media (max-width: 991px) {
+    .recent-patients-report {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+}
+.recent-patients-report-header {
+    background-color: rgba(27, 34, 90, 0.75);
+    border: 0 solid #b9b9b9;
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font: 700 20px/130% Iran-yekan-Bold, sans-serif;
+    justify-content: center;
+    padding: 6px 10.5px;
+    text-align: center;
+    width: 625px;
+}
+@media (max-width: 991px) {
+    .recent-patients-report-header {
+        max-width: 100%;
+    }
+}
+.recent-patients-report-table {
+    background-color: #fff;
+    border-color: rgba(185, 185, 185, 1);
+    border-radius: 0 0 14px 14px;
+    padding: 0px 0px;
+    border-style: solid;
+    border-width: 0px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    width: 647px;
+}
+
+@media (max-width: 991px) {
+    .recent-patients-report-table {
+        max-width: 100%;
+    }
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-block-start: inset;
+    border-width: 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+    clip-path: inset(-10px -0px 0px 0px);
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+}
+
+.logo {
+    width: 196px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .contact-info {
+        flex-wrap: wrap;
+    }
+}
+.contact-info div {
+    display: flex;
+}
+.social-icon1,
+.contact-info a {
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #4c374f;
+}
+.social-icon2,
+.social-icon1 {
+    padding: 15px 0 0px 0;
+    width: 35px;
+}
+
+.social-icon:last-child {
+    margin-top: 30px;
+}
+
+.contact-details {
+    color: #4c374f;
+    flex-grow: 1;
+    font: 700 24px/31px Iran-Yekan-Regular, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .contact-details {
+        max-width: 100%;
+    }
+}
+.whtel {
+    display: inline-flex;
+    margin-top: 30px;
+}
+.whtel div img {
+    padding: 0 5px;
+}
+.phonenumber {
+    color: #4c374f;
+    padding: 5px 0 0 15px;
+}
+.whatsapp,
+.telegram {
+    width: 35px;
+}
+.support {
+    align-self: start;
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    line-height: 130%;
+    text-align: right;
+}
+
+.support-text {
+    margin: auto 0;
+}
+
+.support-icon {
+    width: 75px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+}
