@@ -4,63 +4,78 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="main.css" />
-        <title>Main</title>
+        <title>Dashboard</title>
     </head>
     <body>
         <div class="container1">
-            <div class="logo">
-                <a class="logo-1" href="">
-                    <img src="images/side-logo.png" alt="logo" />
-                </a>
-            </div>
-            <div>
-                <a class="profile" href="#">مهسا محمودی</a>
+            <div class="profile">
+                <a href="#">مهسا محمودی</a>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#"
-                            >پرونده مشتری
-                            <img
-                                src="images/registraition-form.png"
-                                alt="parvande-moshtari"
-                        /></a>
+                        <img
+                            class="logo"
+                            src="images/side-logo.png"
+                            alt="logo"
+                        />
                     </li>
                     <li>
-                        <a href="#"
-                            >خدمات
-                            <img src="images/khadamat.png" alt="khadamat"
-                        /></a>
+                        <ul class="inner list">
+                            <li><a href="#">تشکیل پرونده جدید</a></li>
+                            <li><a href="#">بایگانی</a></li>
+                        </ul>
+                        <img
+                            src="images/registraition-form.png"
+                            alt="parvande-moshtari"
+                        />
+                        <a href="#">پرونده مشتری</a>
                     </li>
                     <li>
-                        <a href="#"
-                            >ثبت سفارش
-                            <img src="images/sabt-sefaresh.png" alt="sefaresh"
-                        /></a>
+                        <img src="images/khadamat.png" alt="khadamat" />
+                        <a href="#">خدمات</a>
                     </li>
                     <li>
-                        <a href="#"
-                            >گزارش
-                            <img src="images/gozaresh.png" alt="gozaresh"
-                        /></a>
+                        <ul class="inner list">
+                            <li><a href="#">ثبت سفارش</a></li>
+                            <li><a href="#">مدیریت سفارشات</a></li>
+                        </ul>
+                        <img src="images/sabt-sefaresh.png" alt="sefaresh" />
+                        <a href="#"> سفارشات </a>
                     </li>
                     <li>
-                        <a href="#"
-                            >مدیریت
-                            <img src="images/modiriat.png" alt="modiriat"
-                        /></a>
+                        <ul class="inner list">
+                            <li><a href="#">پنل پیامکی</a></li>
+                            <li><a href="#">نحوه اشنایی</a></li>
+                            <li><a href="#">منطقه</a></li>
+                            <li><a href="#">معرف</a></li>
+                            <li><a href="#">فعالیت کاربران</a></li>
+                        </ul>
+                        <img src="images/gozaresh.png" alt="gozaresh" />
+                        <a href="#">گزارش </a>
                     </li>
                     <li>
-                        <a href="#"
-                            >حسابداری
-                            <img src="images/hesabdari.png" alt="hesabdari"
-                        /></a>
+                        <ul class="inner list">
+                            <li><a href="#">کارمندان</a></li>
+                            <li><a href="#">کاربران</a></li>
+                        </ul>
+                        <img src="images/modiriat.png" alt="modiriat" />
+                        <a href="#">مدیریت </a>
                     </li>
                     <li>
-                        <a href="#"
-                            >انبارداری
-                            <img src="images/anbardari.png" alt="anbardari"
-                        /></a>
+                        <ul class="inner list">
+                            <li><a href="#">دریافتی ها</a></li>
+                            <li><a href="#">پرداختی ها</a></li>
+                            <li><a href="#">عودتی ها</a></li>
+                            <li><a href="#">چک ها</a></li>
+                            <li><a href="#">موجودی</a></li>
+                        </ul>
+                        <img src="images/hesabdari.png" alt="hesabdari" />
+                        <a href="#">حسابداری </a>
+                    </li>
+                    <li>
+                        <img src="images/anbardari.png" alt="anbardari" />
+                        <a href="#">انبارداری </a>
                     </li>
                 </ul>
             </nav>
@@ -155,12 +170,14 @@
                 </div>
                 <div class="recent-patients-report">
                     <header class="recent-patients-report-header">
-                        گزارش تراکنش های موفق اخیر
+                        گزارش بیماران اخیر
                     </header>
                     <div class="recent-patients-report-table">
                         <div class="table-header">
-                            <div class="table-header-cell">هزینه دریافتی</div>
-                            <div class="table-header-cell services">خدمات</div>
+                            <div class="table-header-cell">نوع خدمات</div>
+                            <div class="table-header-cell services">
+                                کارشناس
+                            </div>
                             <div class="table-header-cell">
                                 نام خانوادگی مشتری
                             </div>

@@ -14,105 +14,91 @@
     src: url("fonts/iranyekanweblightfanum.ttf") format("ttf");
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
-}
-body {
     background: #ffffff;
+}
+.container1 {
+    border-width: 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+.profile {
+    position: absolute;
+    padding: 0.5% 0 0 0.5%;
+}
+.profile a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+.nav {
+    position: absolute;
+}
+nav ul {
+    display: flex;
+    position: relative;
+    direction: rtl;
+    margin: 0;
+    list-style: none;
+    padding: 0;
     font-size: 22px;
     line-height: 32px;
     color: rgba(0, 0, 0, 0.5);
     font-family: Iran-Yekan-Bold, sans-serif;
 }
-
-nav {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    margin: 1% 0;
-    background-color: #ffffff;
+.logo {
+    padding: 0;
 }
-
-nav img {
-    display: block;
-    float: inline-end;
-    margin: -60px 5px;
+nav ul li {
+    display: flex;
+    position: relative;
+    padding-left: 5%;
+    padding: 50px 0 0 40px;
+    max-width: 550px;
+}
+nav ul li:first-child {
+    padding-top: 0;
+}
+nav ul li:first-child img {
     width: 5em;
     height: 6em;
 }
-
-nav ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-
-nav ul li {
-    display: inline-block;
-    background-color: #ffffff;
-}
-
-nav a {
+nav ul li a {
     display: flex;
-    padding: 0 1.5em;
-    color: #000000;
-    font-size: 20px;
-    line-height: 3em;
     text-decoration: none;
+    padding-right: 7px;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
 }
-nav a img {
+nav ul li img {
     display: flex;
     width: 1.5em;
     height: 1.5em;
-    float: right;
-    margin-left: 0.35em;
-    margin-top: 0.5em;
+    padding-top: 5px;
 }
-.container1 {
-    border-block-end: inset;
-    border-width: 10px;
-    writing-mode: horizontal-tb;
-    box-shadow: 0 0 10px rgb(116, 115, 115);
-    clip-path: inset(0px 0px -10px 0px);
+.inner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0%;
 }
-@media screen and (max-width: 1600px) {
-    .container1 nav ul li {
-        width: 60%;
-    }
+.inner li {
+    float: none;
+    width: 200px;
 }
-.container1 .profile {
-    font-size: 25px;
-    color: rgba(78, 78, 78, 1);
-    font-family: Iran-Yekan-light, sans-serif;
+nav ul li:only-child:hover {
+    background: rgba(217, 217, 217, 1);
+}
+nav ul li:hover > .inner {
     display: block;
-    margin-right: 0;
-    margin-left: 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    padding-top: 0;
 }
-.logo {
-    /* display: flex; */
-    float: right;
-}
-.logo-1 {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    float: right;
-    /* padding: 2px; */
-}
-
-nav a:hover {
-    color: #853333;
-}
-
 .container2 .row1 {
     display: flex;
     justify-content: space-between;
@@ -227,7 +213,6 @@ nav a:hover {
 .card3 .card1-footer {
     background-color: #7b5454;
 }
-
 /* tables */
 .row2 {
     display: flex;
@@ -407,12 +392,14 @@ nav a:hover {
 .footer {
     display: flex;
     justify-content: space-between;
-    border-block-start: inset;
     border-width: 10px;
     writing-mode: horizontal-tb;
-    box-shadow: 0 0 10px rgb(116, 115, 115);
-    clip-path: inset(-10px -0px 0px 0px);
+    box-shadow: 0 0 20px rgb(116, 115, 115);
     width: 100%;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Iran-Yekan-Bold, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -477,6 +464,9 @@ nav a:hover {
 .phonenumber {
     color: #4c374f;
     padding: 5px 0 0 15px;
+}
+.phonenumber p {
+    margin: 0;
 }
 .whatsapp,
 .telegram {
