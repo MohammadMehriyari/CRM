@@ -20,12 +20,19 @@ body {
     background: #ffffff;
 }
 .container1 {
+    display: flex;
     border-width: 10px;
     writing-mode: horizontal-tb;
     box-shadow: 0 0 10px rgb(116, 115, 115);
 }
+
+/* @media only screen and (max-width: 1600px) {
+    .container1 {
+        display: none;
+    }
+} */
 .profile {
-    position: absolute;
+    flex: 1;
     padding: 0.5% 0 0 0.5%;
 }
 .profile a {
@@ -35,12 +42,13 @@ body {
     color: rgba(0, 0, 0, 1);
     font-family: Iran-Yekan-Bold, sans-serif;
 }
-.nav {
-    position: absolute;
+.profile a:hover {
+    font-size: 30px;
 }
+
 nav ul {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
     direction: rtl;
     margin: 0;
     list-style: none;
@@ -50,22 +58,19 @@ nav ul {
     color: rgba(0, 0, 0, 0.5);
     font-family: Iran-Yekan-Bold, sans-serif;
 }
-.logo {
-    padding: 0;
-}
 nav ul li {
-    display: flex;
+    /* display: flex; */
     position: relative;
-    padding-left: 5%;
-    padding: 50px 0 0 40px;
-    max-width: 550px;
+    padding: 50px 7px 0 40px;
+    height: 60px;
 }
 nav ul li:first-child {
     padding-top: 0;
 }
 nav ul li:first-child img {
-    width: 5em;
-    height: 6em;
+    padding-top: 0;
+    width: 4em;
+    height: 5em;
 }
 nav ul li a {
     display: flex;
@@ -75,29 +80,44 @@ nav ul li a {
     line-height: 34px;
     color: rgba(0, 0, 0, 1);
     font-family: Iran-Yekan-Bold, sans-serif;
+    /* width: 100px; */
 }
 nav ul li img {
     display: flex;
     width: 1.5em;
     height: 1.5em;
-    padding-top: 5px;
+    /* padding-top: 48px; */
+}
+.wrapper {
+    display: flex;
+    height: 40px;
+    padding: 10px 15px;
+}
+.wrapper:hover {
+    background-color: #d9d9d9;
 }
 .inner {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 0;
     right: 0%;
+    background-color: #ffffff;
 }
 .inner li {
     float: none;
-    width: 200px;
+    height: 35px;
+    /* width: 160px; */
+    padding: 5px 5px;
 }
-nav ul li:only-child:hover {
-    background: rgba(217, 217, 217, 1);
-}
-nav ul li:hover > .inner {
+
+.wrapper:hover > .inner {
     display: block;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+.inner li:hover {
+    background-color: #d9d9d9;
 }
 .container2 .row1 {
     display: flex;
@@ -172,6 +192,10 @@ nav ul li:hover > .inner {
     align-items: start;
     color: rgba(255, 255, 255, 0.5);
     font: 19px Iran-Yekan-Bold, sans-serif;
+}
+.card1-footer a:hover {
+    font-size: 20px;
+    font-style: italic;
 }
 
 .card2 {
