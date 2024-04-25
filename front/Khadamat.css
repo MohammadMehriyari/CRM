@@ -173,8 +173,11 @@ nav ul li img {
     flex-grow: 1;
     width: 100%;
     display: none;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
     background: #fff;
+}
+input {
+    font-family: Iran-Yekan-Regular;
 }
 .tabs input[type="radio"] {
     display: none;
@@ -271,12 +274,12 @@ input[type="submit"] {
     margin: 70px 0;
 }
 .group4 input:last-child {
-    margin: 8px;
+    margin: 4px;
 }
-#datepicker {
+#persianDatapicker {
     border: solid 2px;
     border-color: #d9d9d9;
-    padding: 10px 10px;
+    padding: 6px 6px;
     font-size: 16px;
     width: 200px;
 }
@@ -417,4 +420,14 @@ form button {
     .container2 th:nth-child(4) {
         display: none;
     }
+}
+#confirmationMessage {
+    display: none;
+    /* border: solid red 5px; */
+    background-color: rgba(62, 197, 99, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5%;
+    padding: 15px 40px;
+    max-width: 700px;
+    float: left;
 }

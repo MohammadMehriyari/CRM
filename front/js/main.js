@@ -65,3 +65,16 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+//sumbit messege
+document
+    .getElementById("submitForm")
+    .addEventListener("click", function (event) {
+        if (event.target.id === "infoSubmit") {
+            event.preventDefault();
+            const messageElement = document.getElementById(
+                "confirmationMessage"
+            );
+            messageElement.style.display = "block";
+            messageElement.innerHTML = "افزودن خدمات با موفقیت انجام شد";
+        }
+    });

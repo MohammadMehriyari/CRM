@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="Khadamat.css" />
+        <link rel="stylesheet" href="css/persian-datepicker.min.css">
         <title>Dashboard</title>
     </head>
     <body>
@@ -102,7 +103,7 @@
                 <input type="radio" name="tabs" id="tabone" checked="checked" />
                 <label class="tab1" for="tabone">افزودن</label>
                 <div class="tab">
-                        <form action="#"">
+                        <form id="submitForm"">
                             <div class="group1">
                                 <div class="select-submit">
                                     <select name="mySelect" id="group">
@@ -111,7 +112,7 @@
                                         </option>
                                         <option value="2">لیزر</option>
                                     </select>
-                                    <input id="openModalBtn" type="submit" value="" />
+                                    <input required id="openModalBtn" type="submit" value="" />
                                 </div>
                                 <div id="myModal" class="modal">
                                     <div class="modal-content">
@@ -139,16 +140,18 @@
                                 />
                             </div>
                             <div class="group4">
-                                <label for="datepicker">یادآورها:</label>
+                                <label for="persianDatapicker">یادآورها:</label>
                                 <input
-                                    type="date"
-                                    id="datepicker"
-                                    name="datepicker"
+                                    type="text"
+                                    id="persianDatapicker"
+                                    name="persianDatapicker"
                                 />
                                 <input class="input" type="submit" value="" />
                             </div>
-                            <button style="cursor: pointer;" type="submit" id="infosubmit">ثبت</button>
+                            <button style="cursor: pointer;" type="submit" id="infoSubmit">ثبت</button>
                         </form>
+                        <div id="confirmationMessage"></div>
+
 
                 </div>
                 <input type="radio" name="tabs" id="tabtwo" />
@@ -208,7 +211,9 @@
         </main>
         <script src="js/main.js"></script>
         <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/persian-calender/lib/persian-date.min.js"></script>
+        <script src="js/persian-calender/lib/persian-datepicker.min.js"></script>
+        <script src="js/persian-calender/app.js"></script>
         
-
     </body>
 </html>
