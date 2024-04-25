@@ -155,10 +155,10 @@ label {
     margin: 20px 20px;
 }
 
-#datepicker {
+.persianDatapicker {
     border: solid 2px;
     border-color: #d9d9d9;
-    padding: 10px 10px;
+    padding: 6px 6px;
     font-size: 16px;
     width: 200px;
 }
@@ -185,7 +185,6 @@ canvas {
     height: 100px;
 }
 #myChart {
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 5%;
+    height: 800px;
+    width: 900px;
 }

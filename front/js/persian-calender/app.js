@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const datepickerDOM = $("#persianDatapicker");
+    const datepickerDOM = $(".persianDatapicker");
     const dateObject = datepickerDOM.persianDatepicker({
         inline: false,
         format: "L",

@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="gozzaresh.css" />
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="css/persian-datepicker.min.css" />
+
         <title>Gozaresh</title>
     </head>
     <body>
@@ -27,13 +28,13 @@
                                 src="images/registraition-form.png"
                                 alt="parvande-moshtari"
                             />
-                            <a href="#">پرونده مشتری</a>
+                            <a href="">پرونده مشتری</a>
                         </div>
                     </li>
                     <li>
                         <div class="wrapper">
                             <img src="images/khadamat.png" alt="khadamat" />
-                            <a href="#">خدمات</a>
+                            <a href="Khadamat.html">خدمات</a>
                         </div>
                     </li>
                     <li>
@@ -53,13 +54,13 @@
                         <div class="wrapper">
                             <ul class="inner list">
                                 <li><a href="#">پنل پیامکی</a></li>
-                                <li><a href="#">نحوه اشنایی</a></li>
+                                <li><a href="gozaresh.html">نحوه اشنایی</a></li>
                                 <li><a href="#">منطقه</a></li>
-                                <li><a href="#">معرف</a></li>
+                                <li><a href="">معرف</a></li>
                                 <li><a href="#">فعالیت کاربران</a></li>
                             </ul>
                             <img src="images/gozaresh.png" alt="gozaresh" />
-                            <a href="#">گزارش </a>
+                            <a href="gozaresh.html">گزارش </a>
                         </div>
                     </li>
                     <li>
@@ -95,19 +96,19 @@
             </nav>
         </div>
         <div class="sub menu">
-            <a href="#">صفحه اصلی</a><span>/</span> <a href="#">گزارش</a
-            ><span>/</span>
+            <a href="index.html">صفحه اصلی</a><span>/</span>
+            <a href="gozaresh.html">گزارش</a><span>/</span>
             <a href="#">نحوه آشنایی</a>
         </div>
         <main>
             <form action="#">
                 <div class="group1">
-                    <label for="datepicker">از تاریخ</label>
-                    <input type="date" id="datepicker" name="datepicker" />
+                    <label for="persianDatapicker">از تاریخ</label>
+                    <input type="text" class="persianDatapicker" />
                 </div>
                 <div class="group2">
-                    <label for="datepicker">تا تاریخ</label>
-                    <input type="date" id="datepicker" name="datepicker" />
+                    <label for="persianDatapicker">تا تاریخ</label>
+                    <input type="text" class="persianDatapicker" />
                 </div>
                 <div class="group3">
                     <button type="submit" id="datesearch">جستجو</button>
@@ -119,7 +120,12 @@
                 </div>
             </div>
         </main>
+        <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/persian-calender/lib/persian-date.min.js"></script>
+        <script src="js/persian-calender/lib/persian-datepicker.min.js"></script>
+        <script src="js/persian-calender/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="js/chart.js"></script>
     </body>
 </html>
