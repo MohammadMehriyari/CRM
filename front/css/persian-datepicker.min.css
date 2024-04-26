@@ -4,7 +4,11 @@
 ** http://babakhani.github.io/PersianWebToolkit/docs/datepicker
 ** Under MIT license 
 */
-
+@font-face {
+    font-family: Iran-Yekan-Regular;
+    src: url("fonts/iranyekanwebregularfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebregularfanum.ttf") format("ttf");
+}
 .datepicker-plot-area {
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -68,6 +72,7 @@
 .datepicker-plot-area .datepicker-year-view .year-item,
 .datepicker-plot-area .datepicker-month-view .month-item {
     font: 14px;
+    font-family: Iran-Yekan-Regular;
     background-color: #fff;
     color: #333;
     border: 0;
@@ -138,7 +143,7 @@
     min-width: 200px;
     padding: 3px;
     position: absolute;
-    font: 12px tahoma;
+    font: 12px Iran-Yekan-Regular;
     border: 1px solid #ccc;
     background-color: #fff;
 }
@@ -285,6 +290,7 @@
 }
 .datepicker-plot-area .datepicker-day-view .table-days td .alter-calendar-day {
     font-style: normal;
+    font-family: Iran-Yekan-Regular;
     position: absolute;
     font-size: 8.5px;
     bottom: 0;

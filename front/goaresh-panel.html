@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="gozaresh-panel.css" />
+        <link rel="stylesheet" href="css/persian-datepicker.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="profile">
+                <a href="#">مهسا محمودی</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="images/side-logo.png" alt="logo" />
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">تشکیل پرونده جدید</a></li>
+                                <li><a href="#">بایگانی</a></li>
+                            </ul>
+                            <img
+                                src="images/registraition-form.png"
+                                alt="parvande-moshtari"
+                            />
+                            <a href="#">پرونده مشتری</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <img src="images/khadamat.png" alt="khadamat" />
+                            <a href="#">خدمات</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">ثبت سفارش</a></li>
+                                <li><a href="#">مدیریت سفارشات</a></li>
+                            </ul>
+                            <img
+                                src="images/sabt-sefaresh.png"
+                                alt="sefaresh"
+                            />
+                            <a href="#"> سفارشات </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">پنل پیامکی</a></li>
+                                <li><a href="#">نحوه اشنایی</a></li>
+                                <li><a href="#">منطقه</a></li>
+                                <li><a href="#">معرف</a></li>
+                                <li><a href="#">فعالیت کاربران</a></li>
+                            </ul>
+                            <img src="images/gozaresh.png" alt="gozaresh" />
+                            <a href="#">گزارش </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">کارمندان</a></li>
+                                <li><a href="#">کاربران</a></li>
+                            </ul>
+                            <img src="images/modiriat.png" alt="modiriat" />
+                            <a href="#">مدیریت </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">دریافتی ها</a></li>
+                                <li><a href="#">پرداختی ها</a></li>
+                                <li><a href="#">عودتی ها</a></li>
+                                <li><a href="#">چک ها</a></li>
+                                <li><a href="#">موجودی</a></li>
+                            </ul>
+                            <img src="images/hesabdari.png" alt="hesabdari" />
+                            <a href="#">حسابداری </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <img src="images/anbardari.png" alt="anbardari" />
+                            <a href="#">انبارداری </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sub menu">
+            <a href="#">صفحه اصلی</a><span>/</span> <a href="#">گزارش</a
+            ><span>/</span>
+            <a href="#">پنل پیامکی</a>
+        </div>
+        <main>
+            <div class="container2">
+                <form class="form1" action="#">
+                    <div class="group-sms">
+                        <textarea
+                            placeholder="متن پیامک"
+                            name="sms"
+                            id="sms"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <div class="group-sms-final">
+                        <div class="wrapper1">
+                            <select name="khadamat-selection" id="khselect">
+                                <option value="hide">انتخاب کنید</option>
+                                <option value="1">عمل</option>
+                                <option value="2">لیزر</option>
+                                <option value="3">سعید</option>
+                                <option value="1">مبین</option>
+                            </select>
+                            <label for="khadamat-selection">دسته خدمات</label>
+                        </div>
+                        <div class="wrapper2">
+                            <label for="sms-final">متن نهایی</label>
+                            <textarea
+                                name="sms-final"
+                                id="smsfinal"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="ارسال" />
+                </form>
+            </div>
+            <div class="container3">
+                <h2>ارسال شده ها</h2>
+                <form class="form2" action="#">
+                    <div class="group-khadamat">
+                        <label for="dastekhadamat">دسته خدمات </label>
+                        <input
+                            type="text"
+                            name="dastekhadamat"
+                            id="dastekhadamat"
+                        />
+                    </div>
+                    <div class="group-date">
+                        <label for="persianDatapicker">تاریخ</label>
+                        <input
+                            type="text"
+                            name="persianDatapicker"
+                            class="persianDatapicker"
+                        />
+                    </div>
+                    <button id="submit-bt" type="submit">جستجو</button>
+                </form>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><h1>هزینه کلی</h1></th>
+                                <th><h1>دسته خدمات</h1></th>
+                                <th><h1>تاریخ ارسال</h1></th>
+                                <th><h1>متن پیامک</h1></th>
+                                <th><h1>ردیف</h1></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>۳/۵۰۰/۰۰۰</td>
+                                <td>لیزر</td>
+                                <td>۱۴۰۲/۰۲/۰۱</td>
+                                <td>......با سلام و احترام</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <script src="js/main.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/persian-calender/lib/persian-date.min.js"></script>
+        <script src="js/persian-calender/lib/persian-datepicker.min.js"></script>
+        <script src="js/persian-calender/app.js"></script>
+    </body>
+</html>
