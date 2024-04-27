@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Iran-Yekan-Regular;
+    src: url("fonts/iranyekanwebregularfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebregularfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Bold;
+    src: url("fonts/iranyekanwebboldfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebboldfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Light;
+    src: url("fonts/iranyekanweblightfanum.woff") format("woff");
+    src: url("fonts/iranyekanweblightfanum.ttf") format("ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Iran-Yekan-Regular;
+    height: 100%;
+}
+.container1 {
+    display: flex;
+    border-width: 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+
+/* @media only screen and (max-width: 1600px) {
+    .container1 {
+        display: none;
+    }
+} */
+.profile {
+    flex: 1;
+    padding: 0.5% 0 0 0.5%;
+}
+.profile a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+.profile a:hover {
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+nav ul li {
+    /* display: flex; */
+    position: relative;
+    padding: 50px 7px 0 40px;
+    height: 60px;
+}
+nav ul li:first-child {
+    padding-top: 0;
+}
+nav ul li:first-child img {
+    padding-top: 0;
+    width: 4em;
+    height: 4.7em;
+}
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    padding-right: 7px;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
+    /* width: 100px; */
+}
+nav ul li img {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    /* padding-top: 48px; */
+}
+.wrapper {
+    display: flex;
+    height: 40px;
+    padding: 10px 15px;
+}
+.wrapper:hover {
+    background-color: #d9d9d9;
+}
+.inner {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    right: 0%;
+    background-color: #ffffff;
+}
+.inner li {
+    float: none;
+    height: 35px;
+    /* width: 160px; */
+    padding: 5px 5px;
+}
+
+.wrapper:hover > .inner {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+.inner li:hover {
+    background-color: #d9d9d9;
+}
+.sub {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    padding: 10px 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 1px 10px rgb(116, 115, 115);
+}
+.sub a {
+    font-family: Iran-Yekan-Regular;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+form label {
+    display: inline-block;
+    margin-left: 10px;
+}
+form input {
+    display: inline-block;
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 4px 8px;
+    max-width: 300px;
+    max-height: 40px;
+    font-family: Iran-Yekan-Regular, sans-serif;
+    font-size: 18px;
+    direction: rtl;
+}
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 50px 50px;
+}
+.row1-gp2,
+.row1-gp3,
+.row1-gp4 {
+    margin-right: 8%;
+}
+@media (max-width: 1800px) {
+    .row1-gp2,
+    .row1-gp3,
+    .row1-gp4 {
+        margin-right: 3%;
+    }
+}
+@media (max-width: 1530px) {
+    .row1-gp2,
+    .row1-gp3,
+    .row1-gp4 {
+        margin-right: 1%;
+    }
+    .row1 {
+        margin-left: 0;
+    }
+}
+.row2-gp1 {
+    margin-right: 1.9%;
+}
+.row2-gp2 {
+    margin-right: 5.6%;
+}
+.row2-gp3 {
+    margin-right: 9.8%;
+}
+.row2-gp4 {
+    margin-right: 7.1%;
+}
+@media (max-width: 1800px) {
+    .row2-gp2 {
+        margin-right: 0.7%;
+    }
+    .row2-gp3 {
+        margin-right: 4.5%;
+    }
+    .row2-gp4 {
+        margin-right: 2.1%;
+    }
+}
+@media (max-width: 1530px) {
+    .row2-gp2 {
+        margin-right: 0.1%;
+    }
+    .row2-gp3 {
+        margin-right: 2.5%;
+    }
+    .row2-gp4 {
+        margin-right: 0.5%;
+    }
+}
+.row3-gp2 {
+    margin-right: 4.9%;
+}
+.row4-gp1 {
+    margin-right: 2.2%;
+}
+.row4-gp2,
+.row5-gp3 {
+    margin-right: 7.4%;
+}
+.row4-gp3 {
+    margin-right: 13%;
+}
+
+.row5-gp2 {
+    margin-right: 6.2%;
+}
+.row6 {
+    display: flex;
+    justify-content: left;
+    margin: 10% 25%;
+}
+.persianDatapicker {
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 6px 6px;
+    font-size: 16px;
+    width: 230px;
+}
+select {
+    padding: 5px 5px 5px 50px;
+    border: solid 1px;
+    border-color: rgba(174, 174, 174, 1);
+    background-color: rgba(247, 248, 250, 0.2);
+    font-family: Iran-Yekan-Regular, sans-serif;
+    font-size: 14px;
+    width: 252px;
+    text-align: end;
+}
+button {
+    font-family: Iran-Yekan-Bold, sans-serif;
+    background-color: rgba(62, 197, 99, 1);
+    color: #fff;
+    border: solid 1px;
+    border-color: rgba(62, 197, 99, 1);
+    border-radius: 10px;
+    width: 107px;
+    height: 33px;
+    cursor: pointer;
+}
+textarea {
+    display: inline-block;
+    font-family: Iran-Yekan-Regular, sans-serif;
+    border-color: #d9d9d9;
+    padding: 8px 10px;
+    font-size: 16px;
+    width: 700px;
+    height: 25px;
+    resize: vertical;
+    direction: rtl;
+}
+.row4-gp3 label {
+    display: inline-block;
+    position: absolute;
+    margin-top: 7px;
+}

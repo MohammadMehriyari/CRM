@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Moshtari-new.css" />
+        <link rel="stylesheet" href="css/persian-datepicker.min.css" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="profile">
+                <a href="#">مهسا محمودی</a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="images/side-logo.png" alt="logo" />
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">تشکیل پرونده جدید</a></li>
+                                <li><a href="#">بایگانی</a></li>
+                            </ul>
+                            <img
+                                src="images/registraition-form.png"
+                                alt="parvande-moshtari"
+                            />
+                            <a href="#">پرونده مشتری</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <img src="images/khadamat.png" alt="khadamat" />
+                            <a href="Khadamat.html">خدمات</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">ثبت سفارش</a></li>
+                                <li><a href="#">مدیریت سفارشات</a></li>
+                            </ul>
+                            <img
+                                src="images/sabt-sefaresh.png"
+                                alt="sefaresh"
+                            />
+                            <a href="#"> سفارشات </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">پنل پیامکی</a></li>
+                                <li><a href="gozaresh.html">نحوه اشنایی</a></li>
+                                <li><a href="#">منطقه</a></li>
+                                <li><a href="#">معرف</a></li>
+                                <li><a href="#">فعالیت کاربران</a></li>
+                            </ul>
+                            <img src="images/gozaresh.png" alt="gozaresh" />
+                            <a href="gozaresh.html">گزارش </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">کارمندان</a></li>
+                                <li><a href="#">کاربران</a></li>
+                            </ul>
+                            <img src="images/modiriat.png" alt="modiriat" />
+                            <a href="#">مدیریت </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <ul class="inner list">
+                                <li><a href="#">دریافتی ها</a></li>
+                                <li><a href="#">پرداختی ها</a></li>
+                                <li><a href="#">عودتی ها</a></li>
+                                <li><a href="#">چک ها</a></li>
+                                <li><a href="#">موجودی</a></li>
+                            </ul>
+                            <img src="images/hesabdari.png" alt="hesabdari" />
+                            <a href="#">حسابداری </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper">
+                            <img src="images/anbardari.png" alt="anbardari" />
+                            <a href="#">انبارداری </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sub menu">
+            <a href="index.html">صفحه اصلی</a><span>/</span>
+            <a href="#">پرونده مشتری</a><span>/</span>
+            <a href="#">تشکیل پرونده جدید</a>
+        </div>
+        <main>
+            <form action="#">
+                <div class="row1">
+                    <div class="row1-gp1">
+                        <input
+                            type="text"
+                            name="row1-gp1-text"
+                            id="row1-gp1-text"
+                        />
+                        <label for="row1-gp1-text">شماره پرونده </label>
+                    </div>
+                    <div class="row1-gp2">
+                        <input
+                            type="text"
+                            name="row1-gp2-text"
+                            id="row1-gp2-text"
+                        />
+                        <label for="row1-gp2-text">نام </label>
+                    </div>
+                    <div class="row1-gp3">
+                        <input
+                            type="text"
+                            name="row1-gp3-text"
+                            id="row1-gp3-text"
+                        />
+                        <label for="row1-gp3-text">نام خانوادگی </label>
+                    </div>
+                    <div class="row1-gp4">
+                        <input
+                            type="text"
+                            name="row1-gp4-text"
+                            id="row1-gp4-text"
+                        />
+                        <label for="row1-gp4-text">نام پدر </label>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row2-gp1">
+                        <input
+                            type="text"
+                            name="row2-gp1-text"
+                            id="row2-gp1-text"
+                        />
+                        <label for="row2-gp1-text">کد ملی</label>
+                    </div>
+                    <div class="row2-gp2">
+                        <input
+                            type="text"
+                            name="row2-gp2-text"
+                            id="row2-gp2-text"
+                            class="persianDatapicker"
+                        />
+                        <label for="row2-gp2-text">تاریخ تولد</label>
+                    </div>
+                    <div class="row2-gp3">
+                        <select name="genderSelection" id="genderSelection">
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">مرد</option>
+                            <option value="2">زن</option>
+                        </select>
+                        <label for="genderSelection">جنسیت</label>
+                    </div>
+                    <div class="row2-gp4">
+                        <input
+                            type="text"
+                            name="row2-gp4-text"
+                            id="row2-gp4-text"
+                        />
+                        <label for="row2-gp4-text">نام معرف</label>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="row3-gp1">
+                        <input
+                            type="text"
+                            name="row3-gp1-text"
+                            id="row3-gp1-text"
+                        />
+                        <label for="row3-gp1-text">شماره موبایل</label>
+                    </div>
+                    <div class="row3-gp2">
+                        <input
+                            type="text"
+                            name="row3-gp2-text"
+                            id="row3-gp2-text"
+                        />
+                        <label for="row3-gp2-text">شماره ثابت</label>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div class="row4-gp1">
+                        <select name="provinceSelection" id="provinceSelection">
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">تهران</option>
+                            <option value="2">آذربایجان شرقی</option>
+                        </select>
+                        <label for="provinceSelection">استان</label>
+                    </div>
+                    <div class="row4-gp2">
+                        <select name="citySelection" id="citySelection">
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">تهران</option>
+                            <option value="2">تبریز</option>
+                        </select>
+                        <label for="citySelection">شهر</label>
+                    </div>
+                    <div class="row4-gp3">
+                        <textarea
+                            name="row4-gp3-text"
+                            id="row4-gp3-text"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                        <label for="row4-gp3-text">آدرس</label>
+                    </div>
+                </div>
+                <div class="row5">
+                    <div class="row5-gp1">
+                        <select
+                            name="introductionSelection"
+                            id="introductionSelection"
+                        >
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">وبسایت</option>
+                            <option value="2">اینستاگرام</option>
+                        </select>
+                        <label for="introductionSelection">نحوه آشنایی</label>
+                    </div>
+                    <div class="row5-gp2">
+                        <select name="sectionSelection" id="sectionSelection">
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">یک</option>
+                            <option value="2">دو</option>
+                        </select>
+                        <label for="sectionSelection">منطقه</label>
+                    </div>
+                    <div class="row5-gp3">
+                        <select name="serviceSelection" id="serviceSelection">
+                            <option value="hide">انتخاب کنید</option>
+                            <option value="1">لیزر</option>
+                            <option value="2">جراحی</option>
+                        </select>
+                        <label for="serviceSelection">دسته خدمات</label>
+                    </div>
+                </div>
+                <div class="row6">
+                    <button type="submit">ثبت</button>
+                </div>
+            </form>
+        </main>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/persian-calender/lib/persian-date.min.js"></script>
+        <script src="js/persian-calender/lib/persian-datepicker.min.js"></script>
+        <script src="js/persian-calender/app.js"></script>
+    </body>
+</html>
