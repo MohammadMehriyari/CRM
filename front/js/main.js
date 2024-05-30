@@ -78,3 +78,22 @@ document
             messageElement.innerHTML = "افزودن خدمات با موفقیت انجام شد";
         }
     });
+//toggle buttons
+document.getElementById("toggleSwitch").addEventListener("change", function () {
+    var content = document.getElementById("contentToToggle");
+    if (this.checked) {
+        // Enable content
+        content
+            .querySelectorAll("input, button, select, textarea")
+            .forEach(function (element) {
+                element.disabled = false;
+            });
+    } else {
+        // Disable content
+        content
+            .querySelectorAll("input, button, select, textarea")
+            .forEach(function (element) {
+                element.disabled = true;
+            });
+    }
+});

@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Iran-Yekan-Regular;
+    src: url("fonts/iranyekanwebregularfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebregularfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Bold;
+    src: url("fonts/iranyekanwebboldfanum.woff") format("woff");
+    src: url("fonts/iranyekanwebboldfanum.ttf") format("ttf");
+}
+@font-face {
+    font-family: Iran-Yekan-Light;
+    src: url("fonts/iranyekanweblightfanum.woff") format("woff");
+    src: url("fonts/iranyekanweblightfanum.ttf") format("ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: Iran-Yekan-Bold, sans-serif;
+    font-size: 18px;
+}
+.container1 {
+    display: flex;
+    border-width: 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+
+/* @media only screen and (max-width: 1600px) {
+    .container1 {
+        display: none;
+    }
+} */
+.profile {
+    flex: 1;
+    padding: 0.5% 0 0 0.5%;
+}
+.profile a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+.profile a:hover {
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Iran-Yekan-Bold, sans-serif;
+}
+nav ul li {
+    /* display: flex; */
+    position: relative;
+    padding: 50px 7px 0 40px;
+    height: 60px;
+}
+nav ul li:first-child {
+    padding-top: 0;
+}
+nav ul li:first-child img {
+    padding-top: 0;
+    width: 4em;
+    height: 4.7em;
+}
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    padding-right: 7px;
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 1);
+    font-family: Iran-Yekan-Bold, sans-serif;
+    /* width: 100px; */
+}
+nav ul li img {
+    display: flex;
+    width: 1.5em;
+    height: 1.5em;
+    /* padding-top: 48px; */
+}
+.wrapper {
+    display: flex;
+    height: 40px;
+    padding: 10px 15px;
+}
+.wrapper:hover {
+    background-color: #d9d9d9;
+}
+.inner {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    right: 0%;
+    background-color: #ffffff;
+}
+.inner li {
+    float: none;
+    height: 35px;
+    /* width: 160px; */
+    padding: 5px 5px;
+}
+
+.wrapper:hover > .inner {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+.inner li:hover {
+    background-color: #d9d9d9;
+}
+.sub {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    padding: 10px 10px;
+    writing-mode: horizontal-tb;
+    box-shadow: 0 1px 10px rgb(116, 115, 115);
+}
+.sub a {
+    font-family: Iran-Yekan-Regular;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.persianDatapicker {
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 6px 6px;
+    font-size: 16px;
+    width: 242px;
+    height: 24px;
+}
+textarea {
+    display: inline-block;
+    font-family: Iran-Yekan-Regular, sans-serif;
+    border-color: #d9d9d9;
+    font-size: 16px;
+    width: 234px;
+    height: 100px;
+    resize: none;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+input {
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 4px 18px;
+    margin-top: 50px;
+    max-width: 200px;
+    max-height: 30px;
+    font-family: Iran-Yekan-Regular, sans-serif;
+    font-size: 16px;
+    direction: rtl;
+}
+label {
+    margin: 55px 30px;
+}
+.container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.29);
+}
+.group1,
+.group2 {
+    display: inherit;
+    flex-direction: row-reverse;
+}
+h2 {
+    display: flex;
+    justify-content: right;
+    margin: 30px 60px;
+}
+p {
+    margin: 60px 70px 0 0;
+}
+.switchGroup {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+#contentToToggle {
+    display: grid;
+
+    justify-content: right;
+}
+#contentToToggle input {
+    border: solid 2px;
+    border-color: #d9d9d9;
+    padding: 4px 18px;
+    margin-top: 15px;
+    margin-right: 60px;
+    max-width: 200px;
+    max-height: 40px;
+    font-family: Iran-Yekan-Regular, sans-serif;
+    font-size: 16px;
+    direction: rtl;
+}
